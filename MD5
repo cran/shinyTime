@@ -1,0 +1,13 @@
+6ca5802d861fdbfd9d9e614659380e3b *DESCRIPTION
+84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
+6ac077f99fb59090f7329d121146e8e1 *NAMESPACE
+634bf154b1ba82c03b91881d0a991c34 *R/input-time.R
+2c1573faa230118551dd8a5c7531674c *R/utils.R
+bd79b590b2f4f3aa0a69b7652b9822ab *R/zzz.R
+bf772ce189c0ae47734af8012865b783 *README.md
+e60d62a26b940148298990574f1139a1 *inst/example/app.R
+1cc52d65c76f13caae7591ae42796fa9 *inst/www/input_binding_time.js
+c364dd8557910e1f52bd12ab807b1992 *man/shinyTime.Rd
+90784d7881318a5de935b6ad3b5a9568 *man/shinyTimeExample.Rd
+66c4d6425b4ee1853f697695d38f3c9b *man/timeInput.Rd
+7b6c6fd1146de4eeb725911b4a85e850 *man/updateTimeInput.Rd
