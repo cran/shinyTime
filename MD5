@@ -1,12 +1,13 @@
-c1ad14628b4c7a15ce902ac7fb5e0d60 *DESCRIPTION
+e62f5a7aa17a1628159222cc5c18fe16 *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 6ac077f99fb59090f7329d121146e8e1 *NAMESPACE
-628e77a613e41aa4801b964fab96012f *R/input-time.R
+1c974532b90dac85be1e9de6f5f37b94 *NEWS.md
+cdcefc78db840865deaf734006333db8 *R/input-time.R
 2c1573faa230118551dd8a5c7531674c *R/utils.R
 bd79b590b2f4f3aa0a69b7652b9822ab *R/zzz.R
 20011368f1da971211735cef4c34bc2a *README.md
 e60d62a26b940148298990574f1139a1 *inst/example/app.R
-3c1872f2fe929974b844f0f062cded58 *inst/www/input_binding_time.js
+84fd6c000d532023e3f263b303842693 *inst/www/input_binding_time.js
 a8a9338374e841373d25adacf7f75125 *man/shinyTime.Rd
 ffe149d7e1adfeb885e71d5ea2facc43 *man/shinyTimeExample.Rd
 2e7ce8c41b1bca282430b681e0462aa7 *man/timeInput.Rd

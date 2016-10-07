@@ -1,7 +1,7 @@
 Package: shinyTime
 Type: Package
 Title: A Time Input Widget for Shiny
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: person("Gerhard", "Burger", email = "burger.ga@gmail.com", role = c("aut", "cre"))
 Description: Provides a time input widget for Shiny. This widget allows intuitive time input in the
     '[hh]:[mm]:[ss]' or '[hh]:[mm]' (24H) format by using a separate numeric input for each time
@@ -14,8 +14,8 @@ URL: https://github.com/burgerga/shinyTime
 BugReports: https://github.com/burgerga/shinyTime/issues
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-07-19 20:23:50 UTC; gerhard
+Packaged: 2016-10-07 11:30:37 UTC; gerhard
 Author: Gerhard Burger [aut, cre]
 Maintainer: Gerhard Burger <burger.ga@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-07-20 00:41:44
+Date/Publication: 2016-10-07 18:10:22
