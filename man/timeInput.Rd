@@ -4,8 +4,7 @@
 \alias{timeInput}
 \title{Create a time input}
 \usage{
-timeInput(inputId, label, value = NULL, seconds = TRUE,
-  minute.steps = NULL)
+timeInput(inputId, label, value = NULL, seconds = TRUE, minute.steps = NULL)
 }
 \arguments{
 \item{inputId}{The \code{input} slot that will be used to access the value.}
@@ -16,7 +15,12 @@ timeInput(inputId, label, value = NULL, seconds = TRUE,
 
 \item{seconds}{Show input for seconds. Defaults to TRUE.}
 
-\item{minute.steps}{Round time to multiples of \code{minute.steps} (should be a whole number). If not NULL sets \code{seconds} to \code{FALSE}.}
+\item{minute.steps}{Round time to multiples of \code{minute.steps} (should be a whole number).
+If not NULL sets \code{seconds} to \code{FALSE}.}
+}
+\value{
+Returns a \code{POSIXlt} object, which can be converted to
+a \code{POSIXct} object with \code{as.POSIXct} for more efficient storage.
 }
 \description{
 Creates a time widget that consists of separate numeric inputs for the hours, minutes, and
@@ -53,7 +57,8 @@ shinyApp(ui, server = function(input, output) { })
 \seealso{
 \code{\link{strptime}}, \code{\link{strftime}}, \code{\link{DateTimeClasses}}
 
-Other shinyTime functions: \code{\link{shinyTimeExample}},
-  \code{\link{updateTimeInput}}
+Other shinyTime functions: 
+\code{\link{shinyTimeExample}()},
+\code{\link{updateTimeInput}()}
 }
 \concept{shinyTime functions}

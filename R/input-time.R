@@ -1,12 +1,5 @@
-#' shinyTime: A Time Input Widget for Shiny
-#'
-#' Provides a time input widget for Shiny. This widget allows intuitive time input in the
-#' \code{[hh]:[mm]:[ss]} or \code{[hh]:[mm]} (24H) format by using a separate numeric input for each
-#' time component. The interface with R uses \code{\link{DateTimeClasses}} objects.
-#'
-#' @docType package
-#' @name shinyTime
-NULL
+#' @keywords internal
+"_PACKAGE"
 
 #' Create a time input
 #'
@@ -19,7 +12,11 @@ NULL
 #' @inheritParams shiny::textInput
 #' @param value The desired time value. Must be a instance of \code{\link{DateTimeClasses}}.
 #' @param seconds Show input for seconds. Defaults to TRUE.
-#' @param minute.steps Round time to multiples of \code{minute.steps} (should be a whole number). If not NULL sets \code{seconds} to \code{FALSE}.
+#' @param minute.steps Round time to multiples of \code{minute.steps} (should be a whole number).
+#' If not NULL sets \code{seconds} to \code{FALSE}.
+#'
+#' @returns Returns a \code{POSIXlt} object, which can be converted to
+#' a \code{POSIXct} object with \code{as.POSIXct} for more efficient storage.
 #'
 #' @family shinyTime functions
 #' @seealso \code{\link{strptime}}, \code{\link{strftime}}, \code{\link{DateTimeClasses}}
@@ -65,7 +62,7 @@ timeInput <- function(inputId, label, value = NULL, seconds = TRUE, minute.steps
       tags$script(src = "shinyTime/input_binding_time.js")
     )),
     tags$div(id = inputId, class = "my-shiny-time-input form-group shiny input-container",
-      controlLabel(inputId, label),
+      shinyInputLabel(inputId, label, control = TRUE),
       tags$div(class = "input-group",
         tags$input(type="number", min="0", max="23", step="1", value = value_list$hour,
                    style = style, class = paste(c(input.class, 'shinytime-hours'), collapse = " ")),

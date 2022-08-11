@@ -1,16 +1,16 @@
-# Some utility functions (mostly copied from shiny/R/utils.R)
-
-# Copied from shiny/R/utils.R
-`%AND%` <- function(x, y) {
-  if (!is.null(x) && !is.na(x))
-    if (!is.null(y) && !is.na(y))
-      return(y)
-  return(NULL)
-}
+# Some utility functions
 
 # Copied from shiny/R/input-utils.R
-controlLabel <- function(controlName, label) {
-  label %AND% tags$label(class = "control-label", `for` = controlName, label)
+shinyInputLabel <- function(inputId, label = NULL, control = FALSE) {
+  classes <- c(
+    if (is.null(label)) "shiny-label-null",
+    if (control) "control-label"
+  )
+  tags$label(
+    label,
+    `for` = inputId,
+    class = if (!is.null(classes)) paste(classes, collapse = " ")
+  )
 }
 
 # Given a vector or list, drop all the NULL items in it
@@ -44,10 +44,12 @@ getDefaultTime <- function(){
 is.wholenumber <- function(x, tol = .Machine$double.eps^0.5)  abs(x - round(x)) < tol
 
 roundTime <- function(time, minutes) {
+  stopifnot("POSIXt" %in% class(time))
   stopifnot(is.wholenumber(minutes))
+  time <- as.POSIXct(time)
   # Copied from plyr:::round_any.numeric
   round_any <- function(x, accuracy, f=round){f(x/accuracy) * accuracy}
-  s <- round_any(unclass(as.POSIXct(time)), 60 * minutes)
+  s <- round_any(unclass(time), 60 * minutes)
   # Inspired by lubridate::origin
-  structure(s, class = c("POSIXct", "POSIXt"), tzone = "UTC")
+  structure(s, class = c("POSIXct", "POSIXt"), tzone = attr(time, "tzone"))
 }
