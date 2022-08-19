@@ -1,11 +1,11 @@
-186f930b6cf00462dedcc15f62efd1d0 *DESCRIPTION
+eb59212f016650b28274dcd7de7a651f *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 6ac077f99fb59090f7329d121146e8e1 *NAMESPACE
-289a9d62305e23b37afa96dc6a8ed44f *NEWS.md
-be3d0ea5ee4ac5143ebba77e3b791766 *R/input-time.R
-f11b95d88d242573a293e6770ba8a948 *R/utils.R
+0e317ed7f18370fe4929a5af221e8393 *NEWS.md
+f6ae0f616f8c81123d9e232bf2794ff5 *R/input-time.R
+14b13770891fe011d2fa4173fbcfd031 *R/utils.R
 fcd3c3ef4998de4a891642f75186b372 *R/zzz.R
-435faeb466c69a83aa874a6a3a9bc622 *README.md
+75cf92e66739483f49752344ffd81f5c *README.md
 90828f9334bc50f95ebd9630bf1eac14 *inst/WORDLIST
 e74028b8c1d462359312735140b5acc1 *inst/example/DESCRIPTION
 b7890e1ffbfd52261af0c38da3980eef *inst/example/app.R
@@ -14,8 +14,8 @@ e59d013c20a1b8e8b2c90eb32011369a *inst/www/input_binding_time.js
 0820afe84a9f6768024dfb722e35b8a6 *man/figures/timeInput.png
 423fc1cf9d3d71058b0a1ce59aba408f *man/shinyTime-package.Rd
 6e31dbefd0a95319a0ebfef98bfa716d *man/shinyTimeExample.Rd
-e721832d75699678284d7d554824f73f *man/timeInput.Rd
+727f9370a790e1971818dc2d4c7e810e *man/timeInput.Rd
 5064138d1c0b04856c546c53d5bda761 *man/updateTimeInput.Rd
 0622a97a2aaa3c342f09636052c2d7f5 *tests/spelling.R
 52fe7252f2b05d6a8bf340c35ba176bb *tests/testthat.R
-6cbfc6382b793693760229025611d793 *tests/testthat/test-round-time.R
+3f75d475ea382cef2a0fb6bdafdaa080 *tests/testthat/test-round-time.R
